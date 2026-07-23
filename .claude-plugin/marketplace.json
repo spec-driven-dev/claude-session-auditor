@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "security-audit-plugin",
+  "description": "Self-hosted marketplace for the security-audit plugin.",
+  "owner": {
+    "name": "Chase"
+  },
+  "plugins": [
+    {
+      "name": "security-audit",
+      "source": "./",
+      "description": "Automated auditing of Claude Code sessions for security issues."
+    }
+  ]
+}

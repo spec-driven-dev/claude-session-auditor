@@ -1,0 +1,10 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "security-audit",
+  "version": "0.1.0",
+  "description": "Automated auditing of Claude Code sessions for security issues.",
+  "author": {
+    "name": "Chase"
+  },
+  "license": "MIT"
+}
