@@ -4,7 +4,9 @@ Claude Code plugin for auditing Claude Code sessions for security issues.
 
 ## Status
 
-Skeleton only — the `audit-review` skill and hooks have no logic yet.
+`hooks/` captures `PreToolUse`, `PostToolUse`, and `Notification` events to a global append-only JSONL audit log (see `hooks/scripts/log-event.js`). The `audit-review` skill is still a placeholder — no analysis logic yet.
+
+By default the log is written to `${CLAUDE_PLUGIN_DATA}/audit.jsonl` (persists across plugin updates); override the location via the plugin's `log_path` config option (`/plugin configure security-audit@security-audit-plugin`).
 
 ## Install (local)
 
